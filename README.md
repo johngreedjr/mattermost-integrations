@@ -1,2 +1,6 @@
 # mattermost-integrations
-Integrations for mattermost, wait isn't that in the title basically?
+
+## mattermost preview docker
+`docker run --name mattermost-preview -d --publish 8065:8065 mattermost/mattermost-preview
+
+`
