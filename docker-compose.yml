@@ -1,0 +1,17 @@
+version: '3.5'
+services:
+  integrations:
+    build: .
+    ports:
+     - "3033:3033"
+    networks:
+     - "mm-network"
+  mattermost:
+    image: "mattermost/mattermost-preview"
+    ports:
+     - "8065:8065"
+    networks:
+     - "mm-network"
+networks:
+  mm-network:
+    name: "mm-network"
